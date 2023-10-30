@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flegertec</title>
+    <link rel="icon" href="picture/favicon.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@300&family=Ubuntu:wght@300&display=swap');
+        
+        body {
+            /*font-family: 'DotGothic16', sans-serif;*/
+            /*font-family: 'Ubuntu', sans-serif;*/
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('picture/001.jpg'); /* 001.jpgは背景画像のファイル名として設定 */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: white; /* ヘッダーのテキスト色を白色に変更 */
+        }
+
+        .menu-bar {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #393D46; /* 基調色を #393D46 に変更 */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-button a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0072C6; /* ボタンの背景色を設定 */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0;
+            margin-right: 16px;
+        }
+
+        .menu-button a:hover {
+            background-color: #005999; /* ホバー時の背景色 */
+        }
+
+        .menu-bar .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-bar img {
+            max-width: 50px; /* 企業ロゴのサイズを小さく調整 */
+            height: auto;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .menu-bar .title {
+            font-size: 36px; /* Flegertecのフォントサイズを調整 */
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left; /* 本文コンテンツを左寄せに変更 */
+            margin-top: 70px; /* 余分なスペースを削除 */
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #393D46; /* フッターの背景色を基調色に合わせる */
+            text-align: center;
+            padding: 10px 0;
+            color: white;
+            position: relative;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+        
+    </style>
+    
+        <script type="text/javascript">
+        function ShowNowYear() {
+            var now = new Date();
+            var year = now.getFullYear();
+            document.write(year);
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>製品情報</h1>
+    </header>
+
+    <div class="menu-bar">
+        <div class="left">
+            <a href="index.html"><img src="picture/002.jpg" alt="企業ロゴ"></a>
+            <div class="title">Flegertec</div>
+        </div>
+        <div class="menu-button">
+        <a href="index.html">ホーム</a>
+        <a href="product.html">製品情報</a>
+        <a href="service.html">サービス</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="text-box">
+            <!-- 各ページのコンテンツを追加 -->
+            <h2>製品一覧</h2>
+            <p>Null</p>
+        </div>
+    </div>
+
+    <footer>
+        Mail：<a href="mailto:flegertec@gmail.com?subject=公式サイトより問い合わせ"><font color="#fafafa">Flegertec@gmail.com</font></a>
+        <br>
+        公式Discord：<a href="https://discord.gg/ZKhRXugcNg"><font color="#fafafa">参加</font></a>
+        <br>
+        &copy; <script type="text/javascript">
+            ShowNowYear();
+        </script> Flegertec Corporation
+    </footer>
+</body>
+</html>
